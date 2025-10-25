@@ -27,10 +27,10 @@ jobs:
       # 3. Merge Upstream Änderungen
       - name: Merge upstream changes
         run: |
-          git checkout main
+          git checkout master
           git merge upstream/main --allow-unrelated-histories --no-edit || echo "Nothing to merge"
 
       # 4. Push Änderungen zurück zum Fork
       - name: Push changes to fork
         run: |
-          git push origin main
+          git push origin master
